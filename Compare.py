@@ -7,26 +7,22 @@ file1 = []
 file2 = []
 
 for line in open(fName1):
-    fields1 = line.split(",")
+    fields = line.split(",")
+    name = fields[0]
+    enr = fields[1]
+    spi = fields[2]
+    add = fields[3][:-1]
+    s = (name , enr , spi , add)
+    file1.append(s)
     
-    name1 = fields1[0]
-    enr1 = fields1[1]
-    spi1 = fields1[2]
-    add1 = fields1[3][:-1]
-    
-    s1 = (name1 , enr1 , spi1, add1)
-    file1.append(s1)
-
 for line in open(fName2):
-    fields2 = line.split(",")
-    
-    name2 = fields2[0]
-    enr2 = fields2[1]
-    spi2 = fields2[2]
-    add2 = fields2[3][:-1]
-    
-    s2 = (name2 , enr2 , spi2, add2)
-    file2.append(s2)
+    fields = line.split(",")
+    name = fields[0]
+    enr = fields[1]
+    spi = fields[2]
+    add = fields[3][:-1]
+    s = (name , enr , spi , add)
+    file2.append(s)
 
 output = open("Output.csv","w")
 for line in file1:
