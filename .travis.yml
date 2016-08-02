@@ -1,0 +1,7 @@
+language: python
+python:
+  - "3.4"
+cache: pip
+install: true
+script:
+  - python Compare.py
