@@ -1,5 +1,7 @@
 language: python
 python:
+  - "2.6"
+  - "2.7"
   - "3.2"
   - "3.3"
   - "3.4"
@@ -7,4 +9,4 @@ python:
 cache: pip
 install: true
 script:
-  - python Compare.py
+  - python compare.py
