@@ -9,4 +9,4 @@ python:
 cache: pip
 install: true
 script:
-  - python compare.py
+  - python Compare.py
