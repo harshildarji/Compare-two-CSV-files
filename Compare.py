@@ -1,12 +1,12 @@
 # Compare Two CSV Files
 
-fList = ['Sample1.csv', 'Sample2.csv']      # List of file names
+file_list = ['Sample1.csv', 'Sample2.csv']  # List of file names
 file1 = []                                  # First list to store data of first .csv file
 file2 = []                                  # Second list to store data of second .csv file
 
 for i in range(2):
-    fName = fList[i]                        # Select file
-    for line in open(fName):                # Loop through each line in first .csv file
+    file_name = file_list[i]                # Select file
+    for line in open(file_name):            # Loop through each line in first .csv file
         fields = line.split(',')            # Extract tems seperated by ','
         name = fields[0]
         enr = fields[1]
